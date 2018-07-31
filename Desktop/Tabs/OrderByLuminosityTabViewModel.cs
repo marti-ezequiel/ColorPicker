@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Desktop
 {
-    public class OrderByLuminocityTabViewModel : BasicColorTabItemViewModel
+    public class OrderByLuminosityTabViewModel : BasicColorTabItemViewModel
     {
         protected override IEnumerable<ColorItem> OrderColors(IEnumerable<ColorItem> colors)
         {

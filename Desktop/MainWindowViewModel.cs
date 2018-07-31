@@ -20,7 +20,7 @@ namespace Desktop
                 new OrderByRgbTabView(),
                 new OrderByHsvTabView(),
                 new OrderByHlsTabView(),
-                new OrderByLuminocityTabView(),
+                new OrderByLuminosityTabView(),
                 new OrderByStepsTabView()
             };
 
