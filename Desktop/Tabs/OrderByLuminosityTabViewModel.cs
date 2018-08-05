@@ -8,7 +8,7 @@ namespace Desktop
         protected override IEnumerable<ColorItem> OrderColors(IEnumerable<ColorItem> colors)
         {
             return colors
-                .OrderBy(c => new LHSVColor(c.Color.Color).Luminocity);
+                .OrderByDescending(c => new LHSVColor(c.Color.Color).Luminocity);
         }
     }
 }

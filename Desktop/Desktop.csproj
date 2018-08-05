@@ -61,14 +61,15 @@
     </Compile>
     <Compile Include="Tabs\Basic\BasicColorTabItemViewModel.cs" />
     <Compile Include="Model\LHSVColor.cs" />
+    <Compile Include="Tabs\Basic\GridWithElementHeightProperty.cs" />
+    <Compile Include="Tabs\OrderByLuminosityTabView.cs" />
+    <Compile Include="Tabs\OrderByLuminosityTabViewModel.cs" />
     <Compile Include="Tabs\OrderByStepsTabView.cs" />
     <Compile Include="Tabs\OrderByStepsTabViewModel.cs" />
     <Compile Include="Tabs\OrderByHlsTabView.cs" />
     <Compile Include="Tabs\OrderByHsvTabView.cs" />
     <Compile Include="Tabs\OrderByHlsTabViewModel.cs" />
     <Compile Include="Tabs\OrderByHsvTabViewModel.cs" />
-    <Compile Include="Tabs\OrderByLuminocityTabView.cs" />
-    <Compile Include="Tabs\OrderByLuminocityTabViewModel.cs" />
     <Compile Include="Tabs\OrderByNameTabView.cs" />
     <Compile Include="Tabs\OrderByNameTabViewModel.cs" />
     <Compile Include="Tabs\OrderByRgbTabView.cs" />

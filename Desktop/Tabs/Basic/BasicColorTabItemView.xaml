@@ -3,8 +3,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Desktop"
-        >
-    <Grid>
+        xmlns:basic="clr-namespace:Desktop.Tabs.Basic">
+    <Grid x:Name="grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -44,7 +44,7 @@
                 Margin="5 0 5 0"
                 />
 
-        <StackPanel
+        <basic:GridWithElementHeightProperty
                 Grid.Row="0"
                 Grid.Column="1"
                 Grid.RowSpan="2"
