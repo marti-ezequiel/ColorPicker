@@ -11,7 +11,7 @@ namespace Desktop
         protected override IEnumerable<ColorItem> OrderColors(IEnumerable<ColorItem> colors)
         {
             return colors
-                .OrderBy(c => new LHSVColor(c.Color.Color).Saturation != 0)
+                .OrderBy(c => new LHSVColor(c.Color.Color).Saturation > 7d/255d)
                 .ThenBy(c => Math.Floor(new LHSVColor(c.Color.Color).Hue * this.steps))
                 .ThenBy(c => new LHSVColor(c.Color.Color).Luminocity)
                 .ThenBy(c => Math.Floor(new LHSVColor(c.Color.Color).Value * this.steps));

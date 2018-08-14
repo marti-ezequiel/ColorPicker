@@ -16,8 +16,10 @@ public struct LHSVColor
         Double min = Math.Min(color.R, Math.Min(color.G, color.B));
 
         this.Hue = color.GetHue() / 300d;
-        this.Luminocity = (max + min) / 2d / 255d;
-        this.Saturation = max == min ? 0 : (max - min) / (1d - Math.Abs(this.Luminocity * 2d - 1d));
+        //this.Luminocity = (max + min) / 2d / 255d;
+        this.Luminocity = (color.R +  color.G + color.B) / 3d / 255d;
+        //this.Saturation = max == min ? 0 : (max - min) / (1d - Math.Abs(this.Luminocity * 2d - 1d));
+        this.Saturation = (max - min) / 255d;
         this.Value = max / 255d;
     }
 }
